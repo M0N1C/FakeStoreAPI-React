@@ -1,28 +1,27 @@
 import { Link } from "react-router-dom";
-import './Navbar.css'; // Asegúrate de tener el archivo CSS para el navbar
+import './Navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-link">
-        <button className="navbar-btn">Home</button>
+        <button className="navbar-btn">Search Products</button>
       </Link>
 
-      <Link to="/projects" className="navbar-link">
-        <button className="navbar-btn">Bike Routes</button>
+      <Link to="/products/create" className="navbar-link">
+        <button className="navbar-btn">Create Product</button>
       </Link>
       
-      {/* Enlace actualizado para About */}
-      <Link to="/about" className="navbar-link">
-        <button className="navbar-btn">About</button>
+      <Link to="/delete" className="navbar-link">
+        <button className="navbar-btn">Delete Product</button>
       </Link>
 
-      {/* Enlace actualizado para Contact */}
-      <Link to="/contact" className="navbar-link">
-        <button className="navbar-btn">Contact</button>
+      <Link to="/update" className="navbar-link">
+        <button className="navbar-btn">Update Product</button>
       </Link>
     </nav>
   );
 }
 
 export default Navbar;
+

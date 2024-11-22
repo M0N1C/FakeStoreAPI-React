@@ -1,0 +1,105 @@
+.CreateProductPage {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.CreateProductPage h3 {
+  font-size: 2rem;
+  color: #5c6b73;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.CreateProductPage label {
+  font-size: 1.1rem;
+  color: #5c6b73;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.CreateProductPage form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+  justify-items: center;
+}
+
+.CreateProductPage input,
+.CreateProductPage textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+.CreateProductPage input:focus, .CreateProductPage textarea:focus {
+  border-color: #f43f5e;
+  outline: none;
+}
+
+.CreateProductPage button {
+  background-color: #f43f5e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.CreateProductPage button:hover {
+  background-color: #fb7185;
+  transform: scale(1.05);
+}
+
+.CreateProductPage button:active {
+  background-color: #e11d48;
+}
+
+.CreateProductPage p {
+  color: #e11d48;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .CreateProductPage {
+    padding: 1rem;
+  }
+
+  .CreateProductPage button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .CreateProductPage form {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}

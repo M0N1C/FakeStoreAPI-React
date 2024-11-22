@@ -1,56 +1,48 @@
-/* Contenedor principal */
 #root {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 3rem auto;
-  padding: 4rem 2rem;
-  text-align: left; /* Cambiar alineación para dar otro estilo */
-  background: linear-gradient(135deg, #1e293b, #334155);
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  font-family: 'Poppins', sans-serif;
-  color: #f1f5f9;
-}
-
-/* Título o cabecera */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: #e2e8f0;
+  padding: 3rem 2rem;
   text-align: center;
+  background: linear-gradient(135deg, #ffffff, #f7c6d0);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
-/* Logo principal */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #f43f5e;
+  text-align: center;
+  font-weight: 600;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .logo {
-  height: 80px;
-  width: 80px;
-  background: linear-gradient(135deg, #f43f5e, #fb7185);
-  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(135deg, #f7a8b8, #fb7185);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 8px 15px rgba(244, 63, 94, 0.4);
+  box-shadow: 0 8px 15px rgba(244, 63, 94, 0.3);
   transition: transform 400ms ease, box-shadow 300ms ease;
 }
 
 .logo:hover {
-  transform: rotate(10deg) scale(1.2);
-  box-shadow: 0 10px 20px rgba(251, 113, 133, 0.6);
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0 10px 25px rgba(251, 113, 133, 0.4);
 }
 
-.logo.react:hover {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.6);
-}
-
-/* Animación para los logos */
 @keyframes logo-spin {
   0% {
     transform: rotate(0deg);
@@ -69,25 +61,35 @@ h1 {
   }
 }
 
-/* Tarjetas con rediseño */
 .card {
-  background: #475569;
-  border-radius: 12px;
+  background: #ffffff;
+  border-radius: 15px;
   padding: 2rem;
-  color: #f8fafc;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #4b5563;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
   transition: transform 300ms ease, box-shadow 300ms ease;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Texto de documentación */
+.card h3 {
+  font-size: 1.8rem;
+  color: #f43f5e;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
 .read-the-docs {
-  color: #cbd5e1;
+  color: #6b7280;
   font-size: 1.1rem;
   margin-top: 1rem;
   text-align: center;
@@ -97,24 +99,24 @@ h1 {
 
 .read-the-docs:hover {
   color: #f43f5e;
-  text-shadow: 0 2px 8px rgba(244, 63, 94, 0.5);
+  text-shadow: 0 2px 8px rgba(244, 63, 94, 0.4);
 }
 
-/* Pie de página */
-/* footer {
+footer {
   margin-top: 3rem;
   text-align: center;
   font-size: 0.9rem;
   color: #94a3b8;
-} */
+}
 
 .App {
   position: relative;
   overflow: hidden;
 }
 
-
 .task-title {
-  color: white;
-  text-align: left;
+  color: #f43f5e;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
