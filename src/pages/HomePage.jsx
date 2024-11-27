@@ -4,7 +4,7 @@ function HomePage() {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState(""); 
   const [loading, setLoading] = useState(true); 
-
+////Merging
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
